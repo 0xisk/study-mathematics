@@ -1,0 +1,21 @@
+= Study Mathematics
+:toc: 
+:toclevels: 2
+
+A repository focused on learning and practicing mathematics, by exploring different branches and with different mathematical tools.
+
+++++
+<p align='center'>
+    <img src='./Elliptic_curve_simple.svg.png' alt='Elliptic Curve Simple' width="200" height="100" />
+</p>
+++++
+
+== Subjects
+=== Discrete Mathematics
+Discrete mathematics is the study of mathematical structures that can be considered "discrete" rather than "continuous". Objects studied in discrete mathematics include integers, graphs, and statements in logic. https://en.wikipedia.org/wiki/Discrete_mathematics[wiki/Discrete_mathematics]
+
+=== Calculus
+Calculus, originally called infinitesimal calculus or "the calculus of infinitesimals", is the mathematical study of continuous change, in the same way that geometry is the study of shape, and algebra is the study of generalizations of arithmetic operations. https://en.wikipedia.org/wiki/Calculus[wiki/Calculus]
+
+=== Probability & Statistics
+Probability is the branch of mathematics concerning numerical descriptions of how likely an event is to occur, or how likely it is that a proposition is true. The probability of an event is a number between 0 and 1, where, roughly speaking, 0 indicates impossibility of the event and 1 indicates certainty. https://en.wikipedia.org/wiki/Probability[wiki/Probability]
