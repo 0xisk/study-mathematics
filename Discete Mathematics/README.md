@@ -1,0 +1,25 @@
+# Discrete Mathematics
+
+Discrete mathematics is the study of mathematical structures that can be considered "discrete" rather than "continuous". Objects studied in discrete mathematics include integers, graphs, and statements in logic. [wiki/Discrete_mathematics](https://en.wikipedia.org/wiki/Discrete_mathematics)
+
+## Resources:
+
+### Online course 📹
+
+- (Ar): MA112: Discrete Mathematics I: logic, basics, and foundations - Helwan University, Egypt.
+
+  - 🔗: YouTube: https://www.youtube.com/playlist?list=PLoK2Lr1miEm_WKBBBHUQJRXaumduqkM4S
+
+- (Eng): MIT 6.042J Mathematics for Computer Science, Fall 2010 - MIT University, USA
+
+  - 🔗: YouTube: https://www.youtube.com/playlist?list=PLB7540DEDD482705B
+
+### Reference Books 📕
+
+- (Eng): Discrete Mathematics and Its Applications Seventh Edition 7th Edition, by Kenneth Rosen (Author).
+
+  - 🔗: (Amazon): https://www.amazon.com/Discrete-Mathematics-Its-Applications-Seventh/dp/0073383090
+
+<p align='center'>
+    <img src='./rosen.jpg' alt='Rust' width="500" height="600" />
+</p>
