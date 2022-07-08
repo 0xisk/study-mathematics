@@ -6,7 +6,7 @@ A repository focused on learning and practicing mathematics, by exploring differ
 
 ++++
 <p align='center'>
-    <img src='./Elliptic_curve_simple.svg.png' alt='Elliptic Curve Simple' width="400" height="400" />
+    <img src='./_imgs/Elliptic_curve_simple.svg.png' alt='Elliptic Curve Simple' width="400" height="400" />
 </p>
 ++++
 

@@ -1,0 +1,27 @@
+= Single Variable Calculus
+:toc: 
+:toclevels: 2
+
+== Resources:
+
+=== Online course 📹
+
+. (Ar): YouTube channel: AnaHr: Single Variable course
+.. 🔗: YouTube: https://www.youtube.com/c/anaHr/playlists?view=50&sort=dd&shelf_id=2
+
+. (Eng): MIT 18.01 Single Variable Calculus, Fall 2006 - MIT University, USA
+.. 🔗: YouTube: https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1
+
+. (Eng): MIT 18.01SC: Homework Help for Single Variable Calculus, Fall 2006 - MIT University, USA
+.. : YouTube: https://www.youtube.com/playlist?list=PL21BCE50ABFF029F1
+
+=== Reference Books 📕
+
+. (Eng): Calculus, 4th edition fourth Edition, by Michael Spivak  (Author, Editor).
+.. 🔗: (Amazon): https://www.amazon.com/Calculus-4th-Michael-Spivak/dp/0914098918
+
++++++++
+<p align='center'>
+    <img src='./_imgs/calculus.jpg' alt='Rust' width="500" height="600" />
+</p>
++++++++
