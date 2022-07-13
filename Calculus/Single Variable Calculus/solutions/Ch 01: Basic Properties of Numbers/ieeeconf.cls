@@ -2207,6 +2207,8 @@ Using a default centering column instead}%
 \edef\@IEEEeqnarraycolSEPdefaultmid{\@IEEEeqnarraycolSEPzero}% default inter-column glue
 
 
+% Romaina Numbers
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
 
 % creates a vertical rule that extends from the bottom to the top a a cell
 % Provided in case other packages redefine \vline some other way.

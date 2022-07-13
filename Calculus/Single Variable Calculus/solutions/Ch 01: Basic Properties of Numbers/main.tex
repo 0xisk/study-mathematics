@@ -31,6 +31,8 @@
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
 \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
 
+% Romainan number 
+
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},   
     commentstyle=\color{codegreen},
@@ -53,14 +55,17 @@
 \lstset{style=mystyle}
 
 \title{\LARGE \bf
-ZKU – Cohort 4 (Jul-Aug 2022)\\Week 1: Introduction to ZKP\\Assignment \sharp 1}
+Single Variable Calculus – Micheal Spivak\\3\textsuperscript{rd} Edition\\Part \rom{1}: Prologue\\Ch 01: Basic Properties of Numbers}
 
 % \author{Iskander Andrews\\\faIcon{discord} Isk#0996}
 \author{Iskander Andrews$^{1}$% <-this % stops a space
-\thanks{\faIcon[regular]{envelope} \tt\small iskander.s.andrews@gmail.com}
+\thanks{\noindent\rule{3cm}{0.4pt}}
 \thanks{\faIcon{discord} \tt\small Isk#0996}
-\thanks{\faIcon{github} \tt\small iskdrews}}
-
+\thanks{\faIcon{twitter} \tt\small \href{https://twitter.com/iskdrews}{twitter.com/iskdrews}}
+\thanks{\faIcon{github} \tt\small \href{https://github.com/iskdrews}{github.com/iskdrews}}
+\thanks{\faIcon{linkedin} \tt\small \href{https://www.linkedin.com/in/iskander-andrews-99638313a/}{in/iskander-andrews}}
+\thanks{\faIcon[regular]{envelope} \tt\small iskander.s.andrews@gmail.com}
+}
 \begin{document}
 
 
@@ -73,15 +78,15 @@ ZKU – Cohort 4 (Jul-Aug 2022)\\Week 1: Introduction to ZKP\\Assignment \sharp 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 
-This document is for answering ZKUC04, Week-1, Introduction to ZKP Assignment.
-It consists of three main parts.
-\begin{labeling}{alligator}
-\item [\textbf{Part 1:}] Theoretical background of zk-SNARKs and zk-STARKS.
-\item [\textbf{Part 2:}] Getting started with circom and snarkjs.
-\item [\textbf{Part 3:}] Reading and designing circuits with Circom.
-\end{labeling}
+This document is for answering Part \rom{1}: Prologue, Ch 01: "Basic Properties of Numbers" problems.
+% It consists of three main parts.
+% \begin{labeling}{alligator}
+% \item [\textbf{Part 1:}] Theoretical background of zk-SNARKs and zk-STARKS.
+% \item [\textbf{Part 2:}] Getting started with circom and snarkjs.
+% \item [\textbf{Part 3:}] Reading and designing circuits with Circom.
+% \end{labeling}
 
-The total number of questions and points is $13$, including the bonus questions. 
+% The total number of questions and points is $13$, including the bonus questions. 
 \end{abstract}
 
 \noindent\rule{8cm}{0.4pt}
@@ -144,20 +149,76 @@ $\blacksquare$
 \end{figure}
 \subsection{\textbf{\underline{Problem (5)} Prove the following:}}
 
-\subsubsection{\textbf{If $a < b$ and $c < d$, then $a + c < b + d$}}
+\subsubsection{\textbf{If $a < b$ and $c < d$, then $a + c < b + d$.}}
 
 \begin{proof}
 \begin{align}
     &a < b \rightarrow b - a > 0 &&\\
     &c < d \rightarrow d - c > 0 &&\\
     &\text{\small{Since $b -a$, and $d - c $ are both positive,}} &&\\
-    &b + d - (c + a) > 0  \text{\tiny{ By P(11) Closure under addition}} &&\\
-    & \text{Therefore: } a + c < b + d &&
+    &b + d - (c + a) > 0 && \text{\tiny{ By P(11) Closure under addition}} \\
+    \text{Therefore: } &a + c < b + d &&
 \end{align}
 \begin{flushright}
 $\blacksquare$
 \end{flushright}
 \end{proof}
+
+
+\subsubsection{\textbf{If $a < b$ and $c > d$, then $a - c < b - d$.}}
+
+\begin{proof}
+\begin{align}
+    &a < b \rightarrow b - a > 0 &&\\
+    &c > d \rightarrow c - d > 0 &&\\
+    \text{Since: }&\text{$b - a$, and $c - d$ are both positive,} &&\\
+    &b - a + (c - d) > 0 && \\
+    &-a + c + b - d > 0 &&\\
+    &(-a + c) + (b - d) > 0 &&\\
+    \text{Therefore: } & b - d > - [-a + c]&&\\
+    & a - c < b - d&&
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $a < b$, then $-b < -a$.}}
+
+\begin{proof}
+\begin{align}
+    &a < b \rightarrow b - a > 0 &&\\
+    \text{Then } &b - a &&\text{ is positive.} \\
+    \text{Then } &-(b - a) &&\\
+    \text{Then } &a - b&& \text{ is negative.} \\
+    \text{Since } & a - b < 0 && \\
+    \text{Therefore} & -b < -a &&
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $a < b$ and $c > 0$, then $a.c < b.c$.}}
+\begin{proof}
+\begin{align}
+    &a < b \rightarrow b - a > 0 &&\\
+    \text{Since: } & c > 0 && \\
+    & c.(b - a) > 0.c && \\
+    & c.(b - a) > 0 && \\
+    & c.b - c.a > 0 && \text{\tiny{By P(9) Distributive law}}\\
+    & c.b - c.a + c.a > 0 + c.a && \text{\tiny{By P(3) Additive inverse.}}\\
+    & c.b > c.a && \text{\tiny{By P(2) Additive identity.}}\\
+    &b.c > a.c && \text{\tiny{By P(8) Commutative law for multiplication.}} \\
+    \text{Therefore: } & a.c < b.c&&
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $a < b$ and $c < 0$, then $a.c > b.c$}}
+
 
 \noindent\rule{8cm}{0.4pt}
 \begin{figure}[thpb]
@@ -193,7 +254,7 @@ $\blacksquare$
 \newpage
 
 \section*{ACKNOWLEDGMENT}
-I would like to thank so much Heather @Giveth who told me to register in this great course, and would like to thank hadzija#0842 and cs#6500 for their great help and support. I am really thankful to them and to everyone working behind the scenes to create, maintain, review, manage, and produce this great ZKP course, I see great efforts. 
+I would like to thank so much ...
 
 \noindent\rule{8cm}{0.4pt}
 
@@ -203,13 +264,13 @@ I would like to thank so much Heather @Giveth who told me to register in this gr
 \begin{thebibliography}{99}
 
 \bibitem{c1} ETOIX, CALCULUS BY SPIVAK, CHAPTER 1, PROBLEM 6, SEPTEMBER 30, 2014 \href{https://etoix.wordpress.com/2014/09/30/calculus-by-spivak-chapter-1-problem-6/}{\underline{link}}
-\bibitem{c2} EthHub, ZK-STARKs. \href{https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-starks/}{\underline{link}}
-\bibitem{c3} github.com/ebfull/powersoftau. \href{https://github.com/ebfull/powersoftau}{\underline{link}}
-\bibitem{c4} Koh Wei Jie, Announcing the Perpetual Powers of Tau Ceremony to benefit all zk-SNARK projects, Sep 11, 2019. \href{https://medium.com/coinmonks/announcing-the-perpetual-powers-of-tau-ceremony-to-benefit-all-zk-snark-projects-c3da86af8377#:~:text=The%20Powers%20of%20Tau%20ceremony,protocol%20can%20be%20publicly%20verified.&text=Nevertheless%2C%20each%20ceremony%20takes%20time%20and%20is%20tedious%20to%20coordinate.}{\underline{link}}
-\bibitem{c5} Polygon Hermez, Hermez Zero-Knowledge Proofs, 2020. \href{https://blog.hermez.io/hermez-zero-knowledge-proofs/}{\underline{link}}
-\bibitem{c6} Matthew Finestone, Loopring Begins zkSNARK Trusted Setup Multi-Party Computation Ceremony, Nov 10, 2019 \href{https://medium.com/coinmonks/loopring-starts-zksnark-trusted-setup-multi-party-computation-ceremony-cd1b98113773#:~:text=There%20are%20two%20phases%20for,circuit%20in%20the%20Loopring%20protocol.}{\underline{link}}
-\bibitem{c7} Circom official documentations. \href{https://docs.circom.io/circom-language/constraint-generation/}{\underline{link}}
-\bibitem{c8} Snarkjs official documentation \href{https://github.com/iden3/snarkjs/blob/master/README.md}{\underline{link}}
+% \bibitem{c2} EthHub, ZK-STARKs. \href{https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-starks/}{\underline{link}}
+% \bibitem{c3} github.com/ebfull/powersoftau. \href{https://github.com/ebfull/powersoftau}{\underline{link}}
+% \bibitem{c4} Koh Wei Jie, Announcing the Perpetual Powers of Tau Ceremony to benefit all zk-SNARK projects, Sep 11, 2019. \href{https://medium.com/coinmonks/announcing-the-perpetual-powers-of-tau-ceremony-to-benefit-all-zk-snark-projects-c3da86af8377#:~:text=The%20Powers%20of%20Tau%20ceremony,protocol%20can%20be%20publicly%20verified.&text=Nevertheless%2C%20each%20ceremony%20takes%20time%20and%20is%20tedious%20to%20coordinate.}{\underline{link}}
+% \bibitem{c5} Polygon Hermez, Hermez Zero-Knowledge Proofs, 2020. \href{https://blog.hermez.io/hermez-zero-knowledge-proofs/}{\underline{link}}
+% \bibitem{c6} Matthew Finestone, Loopring Begins zkSNARK Trusted Setup Multi-Party Computation Ceremony, Nov 10, 2019 \href{https://medium.com/coinmonks/loopring-starts-zksnark-trusted-setup-multi-party-computation-ceremony-cd1b98113773#:~:text=There%20are%20two%20phases%20for,circuit%20in%20the%20Loopring%20protocol.}{\underline{link}}
+% \bibitem{c7} Circom official documentations. \href{https://docs.circom.io/circom-language/constraint-generation/}{\underline{link}}
+% \bibitem{c8} Snarkjs official documentation \href{https://github.com/iden3/snarkjs/blob/master/README.md}{\underline{link}}
 \end{thebibliography}
 
 \end{document}
