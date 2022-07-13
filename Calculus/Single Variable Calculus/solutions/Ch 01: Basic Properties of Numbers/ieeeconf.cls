@@ -4537,7 +4537,6 @@ which is provided to fool Hyperref.}}
 \def\PARstart#1#2{#1#2\if@IEEEWARNPARstart\typeout{** WARNING: \noexpand\PARstart is locked out when in conference mode (line \the\inputlineno).}\fi\global\@IEEEWARNPARstartfalse}
 \def\CMPARstart#1#2{#1#2\if@IEEEWARNPARstart\typeout{** WARNING: \noexpand\CMPARstart is locked out when in conference mode (line \the\inputlineno).}\fi\global\@IEEEWARNCMPARstartfalse}
 
-\renewenvironment{keywords}[1]{\if@IEEEWARNkeywords\typeout{** WARNING: \noexpand\keywords is locked out when in conference mode (line \the\inputlineno).}\fi\global\@IEEEWARNkeywordsfalse%
 \setbox\@IEEEtranrubishbin\vbox\bgroup}{\egroup\relax}
 
 % LaTeX treats environments and commands with optional arguments differently.
@@ -4564,7 +4563,6 @@ which is provided to fool Hyperref.}}
 \def\IEEEmembership#1{\if@IEEEWARNIEEEmembership\typeout{** WARNING: \noexpand\IEEEmembership is locked out when in conference mode (line \the\inputlineno).}\fi\global\@IEEEWARNIEEEmembershipfalse}
 \def\IEEEaftertitletext#1{\if@IEEEWARNIEEEaftertitletext\typeout{** WARNING: \noexpand\IEEEaftertitletext is locked out when in conference mode (line \the\inputlineno).}\fi\global\@IEEEWARNIEEEaftertitletextfalse}
 \fi
-
 
 % provide a way to restore the commands that are locked out
 \def\IEEEoverridecommandlockouts{%
