@@ -237,12 +237,11 @@ $\blacksquare$
 
 \begin{proof}
 \begin{align}
-    &\because a > 1 && \\
-    & a.a = a^2 > a && \\
-    &\because a > 1 && \\
-    &\therefore a > 0 && \\
-    &\because c > b \wedge  d > 0 \therefore c.d > b.d && \text{\tiny{Proven at P(5.1)}} \\
-    \text{let: } & d = c = a \wedge b = 1 && \\
+    &\because a > 1 && \text{\tiny{Multiply both sides with $a$}} \\
+    &\therefore a.a = a^2 > a &&\\
+    &\because a > 1 \therefore a > 0 &&  \\
+    &\because c > b \text{ and }  d > 0 \therefore c.d > b.d && \text{\tiny{Proven at P(5.4)}} \\
+    \text{let: } & d = c = a \text{ and } b = 1 && \\
     & \therefore a.a > a.1 \rightarrow a^2 > a&&
 \end{align}
 \begin{flushright}
@@ -250,6 +249,67 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
+\subsubsection{\textbf{If $0 < a < 1$, then $a^2 < a$.}}
+
+\begin{proof}
+\begin{align}
+    &\because a < 1 && \text{\tiny{Multiply both sides with $a$}}\\
+    &\therefore aa < a \rightarrow a^2 < a &&\\
+    &\because a < 1 \because a > 0 &&  \\
+    &\because a < b \text{ and }  c > 0 \therefore a.c < b.c && \text{\tiny{Proven at P(5.4)}} \\
+    \text{let: } & a = c = a \text{ and } b = 1 && \text{\tiny{By Substitute}.}\\
+    & \therefore a.a < 1.a \rightarrow a^2 > a&&
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $0 \leq  a < b$, and $0 \leq c < d$, then $ac < bd$.}}
+
+
+\begin{proof}
+\begin{align}
+    &\text{Case (1): } &&\\
+    \text{let: } & a, c \neq 0 &&\\
+    &\because a < b \therefore ac < bc && \text{\tiny{Multiply $a < b$ by $c$ on both sides.}} \\
+    &\because c < d \therefore bc < bd && \text{\tiny{Multiply $c < d$ by $b$ on both sides.}} \\
+    &\because ac < bc \text{ and } bc < bd && \text{\tiny{By the transitive property}} \\ 
+    &\therefore ac < bd && \\\\
+    &\text{Case (2): } &&\\
+    \text{let: } & a = 0 \text { or } c = 0 \text{ or both. }&&\\
+    &\therefore ac = 0&&\\
+    &\because 0 \leq a < b \text{ and } 0 \leq c < d && \\
+    &\because b > 0 \text{ and } d > 0 && \text{\tiny{By closure under multiplication of inequalities.}}\\
+    &\therefore bd > 0 = ac &&\\
+    &\therefore ac < bd.&&
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $0 \leq a < b$, then $a^2 < b^2$, then $a^2 < b^2$, (Use 8.}}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\subsubsection{\textbf{If $a, b \geqslant  0$, and $a^2 < b^2$, then $a < b$. (Use 9 backwards).}}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
 
 \noindent\rule{8cm}{0.4pt}
 \begin{figure}[thpb]
