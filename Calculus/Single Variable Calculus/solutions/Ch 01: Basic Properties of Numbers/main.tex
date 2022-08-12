@@ -22,6 +22,7 @@
 \usepackage{listings}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{mdframed}
 \usepackage[export]{adjustbox}
 \usepackage[colorinlistoftodos]{todonotes}
 \IEEEoverridecommandlockouts                              
@@ -1149,7 +1150,164 @@ $\blacksquare$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% Problem (18) %%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{\textbf{\underline{Problem (18)}}}
+\subsection{\textbf{\underline{Problem (18):}}}
+
+\begin{mdframed}
+\subsubsection{\textbf{Suppose that $b^2 - 4c \geq 0$. Show that the numbers}}
+
+\begin{center}
+    $\frac{-b + \sqrt{b^2 - 4c}}{2}$, \tab $\frac{-b - \sqrt{b^2 - 4c}}{2}$
+\end{center}
+
+\textbf{both satisfy the equation $x^2 +bx +c = 0$.}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+
+\begin{mdframed}
+\subsubsection{\textbf{Suppose that $b^2 - 4c < 0$. Show that there are no numbers $x$ satisfying $x^2 + bx + c$; in fact, $x^2 + bx + c > 0$ for all $x$. \\ Hint: Complete the square.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Use this fact to give another proof that if $x$ and $y$ are not both $0$, then $x^2 + xy + y^2 > 0$.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{For which numbers $\alpha$ is it true that $x^2 + \alpha xy + y^2 > 0$ whenever $x$ and $y$ are not both $0$?}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Find the smallest possible value of $x^2 + bx + c $ and of $ax^2 + bx + c$, for $a > 0$.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (19) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{\textbf{\underline{Problem (19)}}}
+
+\begin{mdframed}
+\textbf{The fact that $a^2 \geq 0$ for all numbers $a$, elementary as it may seem, is nevertheless the fundamental idea upon which most important inequalities are ultimately based. The great-granddaddy of all inequalities is the \textit{Schwarz inequality}:}
+
+\begin{center}
+    $x_1y_1 + x_2y_2 \leq \sqrt{x_1^2 + x_2^2}\sqrt{y_1^2 + y_2^2}$.
+\end{center}
+
+\textbf{(A more general form occurs in Problem 2-21.) \\ The three proofs of the Schwarz inequality outlined below have only one thing in common-their reliance on the fact that $a^2 \geq 0$ for all $a$.}
+
+\end{mdframed}
+
+\begin{mdframed}
+\subsubsection{\textbf{Prove that if $x_1 = \lambda y_1$ and $x_2 = \lambda y_2$ for some number $\lambda$, then inequality holds in the Schwarz inequality. Prove that same thing if $y_1 = y_2 = 0$. \\ Now suppose that $y_1$ and $y_2$ are not both 0, and that there is no number $\lambda$ such that $x_1 = \lambda y_1$ and $x_2 = \lambda y_2$. Then: }}
+
+\begin{center}
+    $0 < (\lambda y_1 - x_1)^2 + (\lambda y_2 - x_2)^2 = \lambda ^2(y_1^2 + y_2^2) - 2\lambda (x_1y_1 + x_2y_2) + (x_1^2 + x_2^2).$
+\end{center}
+
+\textbf{Using Problem 18. complete the proof of the Schewarz inequality.}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Prove that the Schwarz inequality by using $2xy \leq x^2 + y^2$ (How is this derived?) with}}
+
+\begin{center}
+    $x = \frac{x_i}{\sqrt{x_1^2 + x_2^2}}$, \tab $y = \frac{y_i}{\sqrt{y_1^2 + y_2^2}}$,
+\end{center}
+
+\textbf{First for $i = 1$ and then for $i = 2$.}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Prove the Schwarz inequality by first proving that:}}
+\begin{center}
+    $(x_1^2 + x_2^2)(y_1^2 + y_2^2) = (x_1y_1 + x_2y_2)^2 + (x_1y_2 - x_2y_1)^2$.
+\end{center}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Deduce, from each to these three proofs, that equality holds only when $y_1 = y_2 = 0$ or when there is a number $\lambda$ such that $x_1 = \lambda y_1$ and $x_2 = \lambda y_2$.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% ACKNOWLEDGMENT %%%%%%%%%%%%%%%%%%%
