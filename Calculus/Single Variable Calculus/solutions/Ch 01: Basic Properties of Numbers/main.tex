@@ -100,7 +100,9 @@ This document is for answering Part \rom{1}: Prologue, Ch 01: "Basic Properties 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{\textbf{\underline{Problem (1)} Prove the following:}}
+\begin{mdframed}
 \subsubsection{\textbf{If $ax = a$ for some number $a \neq 0$, then $x = 1$.}}
+\end{mdframed}
 
 \renewcommand\qedsymbol{$\blacksquare$}
 
@@ -117,7 +119,9 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
+\begin{mdframed}
 \subsubsection{$\boldsymbol{x^2 - y^2 = (x - y)(x + y)}$}
+\end{mdframed}
 
 \begin{proof}
 \begin{align}
@@ -135,9 +139,11 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
-
+\begin{mdframed}
 \subsubsection{\textbf{If $x^2 = y^2$, then $x = y$ or $x = -y$.}}
 
+\end{mdframed}
+
 \begin{proof}
 \begin{align}
     
@@ -147,7 +153,9 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
+\begin{mdframed}
 \subsubsection{\textbf{$x^3 = y^3$, then $(z - y)(x^2 + xy +y^2))$.}}
+\end{mdframed}
 
 \begin{proof}
 \begin{align}
@@ -158,7 +166,9 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
+\begin{mdframed}
 \subsubsection{\textbf{$x^n = y^n$, then \\ $(z - y)(x^{n-1} + x^{n-2}y + \dots + xy^{n-2} + y^{n-1})$.}}
+\end{mdframed}
 
 \begin{proof}
 \begin{align}
@@ -169,7 +179,9 @@ $\blacksquare$
 \end{flushright}
 \end{proof}
 
+\begin{mdframed}
 \subsubsection{\textbf{$x^3 = y^3$, then $(z - y)(x^2 - xy +y^2))$. \\ \small{There is a particularly easy way to do this, using (4), and it will show you how to find a factorization for $x^n + y^n$} whenever $n$ is odd.}}
+\end{mdframed}
 
 \begin{proof}
 \begin{align}
@@ -1308,6 +1320,233 @@ $\blacksquare$
 $\blacksquare$
 \end{flushright}
 \end{proof}
+\noindent\rule{8cm}{0.4pt}
+\newpage
+\textbf{\underline{- Note for the next questions:}}
+\begin{mdframed}
+\textbf{In our later work, three facts about inequalities will be crucial. Although proofs will be supplied at the appropriate point in the text, a personal assault on these problems is infinitely more enlightening than a perusal of a completely worked-out proof. The statements of these propositions involve some weird numbers, but their basic message is very simple: if $x$ is close enough to $x_o$, and $y$ is close enough to $y_0$, then $y + y$ will be close to $x_o + y_o$, and $xy$ will be close to $x_0y_0$, and $1/y$ will be close to $1/yo$. The symbol $"\varepsilon"$ which appears in these propositions is the fifth letter of the Greek alphabet ("epsilon"), and could just as well be replaced by a less intimidating Roman letter; however, tradition has made the use of & almost sacrosanct in the contexts to which these theorems apply.}
+\end{mdframed}
+
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (20) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{mdframed}
+\subsection{\textbf{Prove that if:}}
+\begin{center}
+    $\left\lvert x - x_0 \right\rvert < \frac{\varepsilon}{2}$ and $\left\lvert y - y_0 \right\rvert < \frac{\varepsilon}{2}$,
+\end{center}
+\textbf{Then:}
+\begin{center}
+    $\left\lvert (x + y)  - (x_0 + y_0)\right\rvert < \varepsilon$, \\
+    $\left\lvert (x - y) - (x_0 - y_0)\right\rvert < \varepsilon$.
+\end{center}
+\end{mdframed}
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (21) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}
+\subsection{\textbf{Prove that if:}}
+\begin{center}
+    $\left\lvert x - x_0 \right\rvert < min(\frac{\varepsilon}{2(\left\lvert y_0 \right\rvert + 1)}, 1)$ and $\left\lvert y - y_0 \right\rvert < \frac{\varepsilon}{2\left\lvert x_0 \right\rvert + 1}$,
+\end{center}
+\textbf{then $\left\lvert xy - x_0y_0 \right\rvert < \varepsilon$.}
+\newline
+(The notion "min" was defined in Problem 13, but the formula provided by that problem is irrelevant at the moment; the first inequality in the hypothesis just means that
+\begin{center}
+    $\left\lvert x - x_0 \right\rvert < \frac{\varepsilon}{2\left\lvert y_0 \right\rvert + 1}$ and $\left\lvert x - x_0 \right\rvert < 1$;
+\end{center}
+at one point in the argument you will need the first inequality, and at another point you will need the second. One more word of advice: since the hypotheses only provide information about $x - x_0$ and $y - y_0$, it is almost a foregone conclusion that the proof will depend upon writing $xy - x_0y_0$ in a way that involves $x - x_0$ and $y - y_0$.)
+\end{mdframed}
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (22) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}
+\subsection{\textbf{Prove that if $y_0 \neq 0$ and}}
+\begin{center}
+    $\left\lvert y - y_0 \right\rvert < min(\frac{\left\lvert y_0 \right\rvert}{2},\frac{\varepsilon\left\lvert y_0 \right\rvert^2}{2})$,
+\end{center}
+\textbf{then $y \neq 0$ and}
+\begin{center}
+    $\left\lvert \frac{1}{y} - \frac{1}{y_0} \right\rvert < \varepsilon$.
+\end{center}
+\end{mdframed}
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (23) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}
+\subsection{\textbf{Replace the question marks in the following statement by expressions involving $\varepsilon$, $x_0$, and $y_0$ so that the conclusion will be true:}}
+
+\textbf{If $y_0 \neq 0$ and}
+
+\begin{center}
+    $\left\lvert y - y_0 \right\rvert < ?$ and $\left\lvert x - x_0\right\rvert < ?$
+\end{center}
+
+\textbf{then $y \neq 0$ and}
+
+\begin{center}
+    $\left\lvert \frac{x}{y} - \frac{x_0}{y_0} \right\rvert < \varepsilon$.
+\end{center}
+
+\textbf{\textit{This problem is trivial in the sense that its solution follows from Problems 21 and 22 with almost no work at all (notice that $x/y = x.1/y$). The crucial point is not to become confused; decide which of the two problems should be used first, and don't panic if your answer looks unlikely.}}
+\end{mdframed}
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+\noindent\rule{8cm}{0.4pt}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (24) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}
+
+\subsection{\textbf{This problem shows that the actual placement of parentheses in a sum is irrelevant. The proofs involve "mathematical induction"; if you are not familiar with such proofs, but still want to tackle this problem, it can be saved
+until after Chapter 2, where proofs by induction are explained.}}
+
+\textbf{\textit{Let us agree, that for definiteness, that $a_1 + \cdots + a_n$ will denote}}
+
+\begin{center}
+    $a_1 + (a_2 + (a_3 + \cdots  + (a_{n-2} + (a_{n-1} + a_n))) \cdots )$.
+\end{center}
+
+\textbf{\textit{Thus $a_1 + a_2 + a_3$ denotes $a_1 + (a_2 + a_3)$, and $a_1 + a_2 + a_3 + a_4$ denotes $a_1 + (a_2 + (a_3 + a_4)), etc.$}}
+\end{mdframed}
+
+\begin{mdframed}
+\subsubsection{\textbf{Prove that:}}
+
+\begin{center}
+    $a_1 + \cdots + a_k + a_{k+1} = a_1 + \cdots + a_{k+1}$. 
+\end{center}
+
+\textbf{\textit{Hint: Use induction on $K$.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Prove that if $n \leq k$, then}}
+
+\begin{center}
+    $(a_1 + \cdots + a_k) + (a_{k+1} + \cdots + a_n) = (a_1 + \cdots + a_n)$. 
+\end{center}
+
+\textbf{\textit{Hint: Use part (a} to give a proof by induction on $K$.}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\begin{mdframed}
+\subsubsection{\textbf{Let $s(a_1, \cdots, a_k)$ be some sum formed from $a_1, \cdots, a_k$. Show that:}}
+
+\begin{center}
+    $s(a_1, \cdots, a_k) = a_1 + \cdots + a_k$.
+\end{center}
+
+\textbf{\textit{Hint: There must be two sums $s\prime(a_1, \cdots, a_1$ and $s\prime\prime(a_{l+1}, \cdots, a_k)$.}}
+
+\begin{center}
+    $s(a_1, \cdots, a_k) = s\prime(a_1, \cdots, a_1) + s\prime\prime(a{l+1}, \cdots, a_k)$.
+\end{center}
+\end{mdframed}
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+
+\noindent\rule{8cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%% Problem (25) %%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}
+\subsection{\textbf{Suppose that we interpret "number" to mean either $0$ or $1$, and $+$ and $•$ to be the operations defined by the following two tables.}}
+
+\begin{center}
+    \begin{tabular}{c|c|c|} 
+      + & 0 & 1 \\ 
+      \hline
+      0 & 0 & 1 \\ 
+      \hline
+      1 & 1 & 0 \\ 
+      \hline
+    \end{tabular}
+    \tab \tab \tab
+    \begin{tabular}{c|c|c|} 
+      . & 0 & 1 \\ 
+      \hline
+      0 & 0 & 0 \\ 
+      \hline
+      1 & 0 & 1 \\ 
+      \hline
+    \end{tabular}
+\end{center}
+
+\textbf{\textit{Check that properties P1-P9 all hold, even though $1 + 1 = 0$.}}
+\end{mdframed}
+
+\begin{proof}
+\begin{align}
+    
+\end{align}
+\begin{flushright}
+$\blacksquare$
+\end{flushright}
+\end{proof}
+\noindent\rule{8cm}{0.4pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%% ACKNOWLEDGMENT %%%%%%%%%%%%%%%%%%%
